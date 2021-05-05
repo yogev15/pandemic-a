@@ -37,6 +37,6 @@ string Player::role(){
         return " ";
 }
     
-Player& pandemic::Player::take_card(City city){
+Player& Player::take_card(City city){
     return *this;
 }

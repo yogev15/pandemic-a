@@ -13,7 +13,7 @@ namespace pandemic
         City city;
 
       public:
-        Player(Board& baord, City city){}
+        Player(Board& board, City city){}
 
         Player& drive(City city);
         Player& fly_direct(City city);
