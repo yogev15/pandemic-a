@@ -3,21 +3,20 @@
 using namespace std;
 using namespace pandemic;
 
+void Board::remove_cures(){
+    
+}
 
 bool Board::is_clean(){
     return true;
 }
 
-void Board::operator=(int n){
+//void Board::operator=(int n){
 
-}
+//}
 
-Board& Board::operator[](City city){
-    return *this;
-}
-
-const Board Board::operator[](City city) const{
-    return *this;
+int& Board::operator[](City city){
+    return Board::deases_level[city];
 }
 
 ostream& pandemic::operator<<(ostream& output, const Board& board){

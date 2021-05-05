@@ -9,8 +9,9 @@ namespace pandemic{
 
         private:
 
-            std::unordered_map<City, int> deases_level;
             std::unordered_map<City, City> niegbouhrs; 
+            std::unordered_map<City, int> deases_level;
+            std::unordered_map<City, bool> reasearch_stations;
                 
 
         public:
@@ -18,11 +19,11 @@ namespace pandemic{
 
             bool is_clean();
 
-            void operator=(int num);
+            void remove_cures();
 
-            Board& operator[](City city);
+            //void operator=(int n);
 
-            const Board operator[](City city) const;
+            int& operator[](City city);
 
             friend std::ostream& operator<<(std::ostream& output, const Board& board);
     };
