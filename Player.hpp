@@ -23,7 +23,7 @@ namespace pandemic
         Player& discover_cure(Color color);
         Player& treat(City city);
 
-        std::string role();
+        static std::string role();
         Player& take_card(City city);
   };  
 }

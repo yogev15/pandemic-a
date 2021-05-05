@@ -34,7 +34,7 @@ Player& Player::treat(City city){
 }
 
 string Player::role(){
-        return " ";
+    return " ";
 }
     
 Player& Player::take_card(City city){

@@ -17,7 +17,7 @@ namespace pandemic{
         public:
             Board(){}
 
-            bool is_clean();
+            static bool is_clean();
 
             void remove_cures();
 
